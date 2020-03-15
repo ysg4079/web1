@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> Loop & Array </h1>
+    <script>
+      var coworkers = ['ysg4079','yhc4079','yhs4079','yhr4079'];
+      var nam = ["용승갑 홈페이지","용휘찬 홈페이지","용휘성 홈페이지","용휘랑 홈페이지"];
+    </script>
+    <h2> Co workers </h2>
+    <ul>
+      <script>
+        var i = 0;
+        while(i < nam.length){
+          document.write('<li><a href="https://'+coworkers[i]+'.github.io/web1/">'+nam[i]+'</a></li>');
+          i += 1;
+        }
+      </script>
+    </ul>
+  </body>
+</html>
