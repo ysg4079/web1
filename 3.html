@@ -3,38 +3,19 @@
   <head>
     <title> WEB1 - JavaScript : 용승갑  </title>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="colors.js"> </script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
 
     <input type="button" value="night" onclick="
-      var dragon = document.querySelector('body');
-      if(this.value === 'night') {
-        dragon.style.backgroundColor = 'black';
-        dragon.style.color = 'white';
-        this.value = 'day';
+      nightDayHandler(this);
+    ">
 
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-            alist[i].style.color = 'powderblue';
-            i += 1;
-        }
-
-      } else {
-        dragon.style.backgroundColor = 'white';
-        dragon.style.color = 'black';
-        this.value = 'night';
-
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-            alist[i].style.color = 'blue';
-            i += 1;
-        }
-
-      }
+    <input type="button" value="night" onclick="
+      nightDayHandler(this);
     ">
 
     <div id="grid">
